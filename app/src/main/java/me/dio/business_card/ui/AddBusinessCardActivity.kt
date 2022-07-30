@@ -43,6 +43,6 @@ class AddBusinessCardActivity : AppCompatActivity() {
     }
 }
 
-class ActivityAddBusinessCardBinding {
 
-}
+
+

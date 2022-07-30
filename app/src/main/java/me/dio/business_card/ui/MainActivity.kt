@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.core.app.ActivityCompat
+import androidx.core.content.res.ColorStateListInflaterCompat.inflate
 import me.dio.business_card.App
 import me.dio.business_card.R
 import me.dio.business_card.util.Image
@@ -56,5 +57,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
+}
+
+class ActivityMainBinding {
 
 }
