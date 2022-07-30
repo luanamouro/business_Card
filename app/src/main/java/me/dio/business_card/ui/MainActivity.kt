@@ -6,11 +6,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.core.app.ActivityCompat
+import me.dio.business_card.App
 import me.dio.business_card.R
 
 class MainActivity : AppCompatActivity() {
 
-    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+    private val binding by lazy {ActivityMainBinding.inflate(layoutInflater) }
     private val mainViewModel: MainViewModel by viewModels {
         MainViewModelFactory((application as App).repository)
     }
@@ -50,9 +51,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getAllBusinessCard() {
-        mainViewModel.getAll().observe(this, { businessCards ->
-            adapter.submitList(businessCards)
-        })
+        mainViewModel.getAll().observe(this) {
+        }
     }
 
 
