@@ -8,6 +8,7 @@ import androidx.activity.viewModels
 import androidx.core.app.ActivityCompat
 import me.dio.business_card.App
 import me.dio.business_card.R
+import me.dio.business_card.util.Image
 
 class MainActivity : AppCompatActivity() {
 
